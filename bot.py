@@ -63,10 +63,6 @@ async def gpt(ctx: commands.context, *, prompt: str):
             response = await resp.json()
             embed = discord.Embed(title="Chat Gpt Lite Response:", description=response["choices"][0]["text"])
             await ctx.reply(embed=embed)
-            
-@bot.command(hidden=True)
-async def hello(ctx: commands.context, *, prompt: str):
-            await ctx.reply("Heloooo")
 
 async def main():
     async with bot:
