@@ -24,7 +24,7 @@ async def on_ready():
         f'{i}'
         )
     print(f'Bot is ready to go!') 
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='chatgpt ask'))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='chat gpt'))
 
 @bot.command(hidden=True)
 async def status(ctx, arg, arg2, arg3=None):
